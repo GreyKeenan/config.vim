@@ -39,9 +39,6 @@ function! ActivateRemaps()
 	noremap <s-s> <c-d>zz
 	noremap <s-left> H
 	noremap <s-right> L
-	" pretty sure these 2 are useless:
-	noremap <c-up> <c-b>
-	noremap <c-down> <c-f>
 
 
 	noremap <c-a> b
@@ -49,10 +46,11 @@ function! ActivateRemaps()
 	noremap <c-q> e
 	noremap <s-q> E
 	noremap <tab> W
-	noremap <s-tab> w
+	"noremap <s-tab> w "doesnt work on linux
 
 	noremap <space> f<space>
-	noremap <s-space> F<space>
+	" noremap <s-space> F<space> "doesnt work on linux
+
 
 	noremap e _
 	noremap E 0
@@ -67,8 +65,8 @@ function! ActivateRemaps()
 	" search
 	noremap ? /
 
-	noremap <c-f> /
-	inoremap <c-f> <esc>/
+	noremap <c-f> :%s/
+	inoremap <c-f> <esc>:%s/
 
 	noremap <c-j> n
 	noremap <c-k> N
@@ -93,8 +91,8 @@ function! ActivateRemaps()
 	noremap <c-h> 0i
 
 	noremap <backspace> s
-	noremap <s-backspace> S
-	noremap <c-d> s
+	"noremap <c-backspace> S "doesnt work on linux
+	noremap <c-d> S
 	noremap ' r
 	noremap " R
 
@@ -118,8 +116,8 @@ function! ActivateRemaps()
 
 
 	" tabs,windows,files
-	" noremap - gT
-	" noremap = gt
+	noremap ga gT
+	noremap gq gt
 	
 	noremap <c-b> <c-z>
 
@@ -155,7 +153,7 @@ function! ActivateRemaps()
 	"noremap P [P
 	nmap <c-p> p
 	nmap <c-v> p
-	inoremap <c-p> <esc>gP
+	inoremap <c-p> <c-r>"
 	imap <c-v> <c-p>
 
 	" save
@@ -182,14 +180,5 @@ function! ActivateRemaps()
 
 endfunction
 
-" notable keys yet to be reassigned
-	" g, c, v, x, z, u
-	" some of these are ok as they are though
-		" g, x, u
-
-" functionality i want to put somewhere
-	" f, F, t, T, ;, ','
-	" L, H
-	" G, g
 
 call ActivateRemaps()
