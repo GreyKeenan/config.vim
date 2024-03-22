@@ -1,0 +1,44 @@
+
+h j k l
+<c-d> <c-u>
+G gg
+w W e E b B
+( )
+
+zz
+
+a i o A I O
+s c
+x d
+' "
+
+<c-^>
+gt gT
+<c-z>
+
+0 _ $ %
+
+<c-w> <arrows>
+
+> >> < <<
+
+~ <c-a> <c-x>
+
+J
+
+f F t T
+n N
+
+p P [p [P
+i: <c-r>
+y Y
+u <c-r>
+v V
+
+:q :w
+i: <esc>
+
+.
+/
+
+:%s/
