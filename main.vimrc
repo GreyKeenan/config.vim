@@ -21,9 +21,15 @@ function! GK_tabSet_spaces(size)
 	let &shiftwidth = a:size
 endfunction
 
+function! GK_noUnderline()
+	set cursorline
+	hi CursorLine cterm=NONE
+	hi CursorLineNr cterm=NONE
+endfunction
 
-set backupdir=~/gk.vimconfig/backups
-set directory=~/gk.vimconfig/backups
+
+set backupdir=~/vim_backups
+set directory=~/vim_backups
 
 set mouse-=a " disable mouse
 
@@ -32,14 +38,13 @@ call GK_tabSet(8)
 
 set termguicolors
 
-silent! colorscheme quiet
 silent! colorscheme industry
+silent! colorscheme darkblue
 silent! colorscheme slate
-silent! colorscheme snazzy
 silent! colorscheme sorbet
 
 syntax on
-set cursorline
+call GK_noUnderline()
 
 let g:netrw_bufsettings='noma nomod nu rnu' " line numbers in explorer
 set nu rnu  " line numbers
