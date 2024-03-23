@@ -1,4 +1,4 @@
 
 default: .vimrc
-	cp .vimr ~/.vimrc
-	mkdir ~/vim_backups -p
+	cp .vimrc ~/.vimrc
+	mkdir ~/vim_backups
