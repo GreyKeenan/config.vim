@@ -3,42 +3,90 @@ h j k l
 <c-d> <c-u>
 G gg
 w W e E b B
+ge gE
 ( )
+gj gk
+
+``
+<c-o>
+<c-c>
 
 zz
+zt zb
+
+iw iW
+   ib iB it ab aB at
+// () {} <>
 
 a i o A I O
 s c
 x d
-' "
+r R
 
 <c-^>
+:b :bn :bp
+:bd
+
 gt gT
+:tabm :tabc :tabo :tabdo
+
 <c-z>
 
 0 _ $ %
 
-<c-w> <arrows>
+<c-w>s <c-w>v <c-w>q
+<c-w>w
+<c-w>T
 
 > >> < <<
-
-~ <c-a> <c-x>
-
-J
+= ==
 
 f F t T
-n N
+, ;
+
+~ <c-a> <c-x>
+g~ gu gU
+
+gJ J
 
 p P [p [P
+gp gP
+
 i: <c-r>
 y Y
 u <c-r>
 v V
 
-:q :w
+:q :w :x :wa :qa :wqa
+:sav 
+
 i: <esc>
+i: <c-o>
+i: <c-c>
 
 .
-/
+
+/ ?
+n N
 
 :%s/
+n N
+
+:e :tabe
+:Ex :Te
+
+
+# Complaints
+
+[p an ]p instead of [P and [p
+
+>j >k both move the cursor to the top of the selected rows
+	? does y do this too?
+
+just generally, similar actions not being grouped together. Like having shift+up be <c-u> would be more intuitive
+
+the color schemes suck.
+
+when :q a tab, focus goes to right-tab instead of left-tab
+
+netwr.
