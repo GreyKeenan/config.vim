@@ -32,7 +32,7 @@ set backupdir=~/vim_backups
 set directory=~/vim_backups
 
 set mouse-=a " disable mouse
-" set backspace=2
+set backspace=2
 
 set ai  "auto-indent
 call GK_tabSet(8)
