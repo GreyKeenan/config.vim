@@ -1,6 +1,6 @@
 
-default: main.vimrc
-	cp main.vimrc ~/.vimrc
+default: .vimrc
+	cp .vimrc ~/.vimrc
 	mkdir ~/vim_backups -p
 
 supplant: ~/.vimrc
