@@ -27,6 +27,26 @@ function! GK_noUnderline()
 	hi CursorLineNr cterm=NONE
 endfunction
 
+function! GK_book()
+	silent! colo lunaperche
+	silent! colo torte
+	silent! colo quiet
+	set nocursorline
+	set mouse+=a
+
+	nnoremap <up> <esc>H{{/\S<cr>ztL
+	nnoremap <down> <esc>H}/\S<cr>ztL
+
+	nnoremap <s-left> <esc>HO<esc><s-d>i---bmk---<esc>
+	nnoremap <s-right> <esc>dd
+	nnoremap <right> <esc>H/---bmk---<cr>zt:w<cr>
+	nnoremap <left> <esc>H?---bmk---<cr>zt:w<cr>
+
+	nnoremap <c-left> <esc>u
+	nnoremap <c-right> <esc><c-r>
+
+	nnoremap <c-up> <esc>zt
+endfunction
 
 set backupdir=~/vim_backups
 set directory=~/vim_backups
