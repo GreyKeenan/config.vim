@@ -37,10 +37,10 @@ function! GK_book()
 	nnoremap <up> <esc>H{{/\S<cr>ztL
 	nnoremap <down> <esc>H}/\S<cr>ztL
 
-	nnoremap <s-left> <esc>HO<esc><s-d>i---bmk---<esc>
+	nnoremap <s-left> <esc>HO<esc><s-d>i---bmk---<esc>:w<cr>
 	nnoremap <s-right> <esc>dd
-	nnoremap <right> <esc>H/---bmk---<cr>zt:w<cr>
-	nnoremap <left> <esc>H?---bmk---<cr>zt:w<cr>
+	nnoremap <right> <esc>H/---bmk---<cr>zt
+	nnoremap <left> <esc>H?---bmk---<cr>zt
 
 	nnoremap <c-left> <esc>u
 	nnoremap <c-right> <esc><c-r>
