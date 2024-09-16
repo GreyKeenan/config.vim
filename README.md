@@ -1,6 +1,11 @@
+Grey Keenan's .vimrc
+==================================================
 
-# Grey Keenan's personal vim config files
+Its pretty minimal.
 
-I try to keep my config minimal for ease of portability.
-
-vim will be set to place backup files in ~/\<this repos folder\>/backups
+> Dear Me,
+> 
+> 	Please stop forgetting to make the "~/vim_backups" folder.
+> 
+> Thank you, \
+> 	Also-Me
