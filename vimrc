@@ -31,9 +31,26 @@ endfunction
 set backupdir=~/vim_backups
 set directory=~/vim_backups
 
-set ai  "auto-indent
-set lcs=tab:[\ ]
+function! GK_lcs()
+	set lcs=tab:(\ )
+
+	" set lcs+=space:-
+	set lcs+=nbsp:+
+	" set lcs+=multispace:
+	set lcs+=trail:&
+
+	set showbreak:~>
+	set lcs+=extends:~
+	set lcs+=precedes:~
+
+	" set lcs+=eol:`
+
+	set lcs+=conceal:@
+endfunction
+set ai " auto-indent
+call GK_lcs()
 set list
+set breakindent
 " call GK_tabSet(8)
 
 syntax on
@@ -41,11 +58,11 @@ set termguicolors
 silent! colo industry
 silent! colo darkblue
 silent! colo slate
-silent! colo sorbet
-"also like: retrobox, wildcharm, zaibatsu, quiet
+silent! colo retrobox
+"also like: sorbet, wildcharm, zaibatsu, quiet
 call GK_noUnderline()
 
-set nu rnu  " line numbers
+set nu rnu " line numbers
 let g:netrw_bufsettings='noma nomod nu rnu' " line numbers in explorer
 
 set belloff=all
