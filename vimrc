@@ -32,7 +32,7 @@ set backupdir=~/vim_backups
 set directory=~/vim_backups
 
 function! GK_lcs()
-	set lcs=tab:(\ )
+	set lcs=tab::\ 
 
 	" set lcs+=space:-
 	set lcs+=nbsp:+
