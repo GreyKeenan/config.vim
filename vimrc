@@ -32,13 +32,13 @@ nnoremap - <Nop>
 
 nnoremap -h <Nop>
 nnoremap -hr <Nop>
-nnoremap -hm <Nop>
 
 nnoremap -hk mhgg/INDEX<enter>zz
 nnoremap -hj mhgg/INDEX<enter>}zz
 nnoremap -hi I  
 nnoremap -hu 0xx
 nnoremap -hg 0wmhw"sy$/<c-r>s$<enter>zz
+nnoremap -hb `hzz
 
 nnoremap -h1 mhyygg/INDEX<enter>}zzPI- <esc>
 nnoremap -h2 mhyygg/INDEX<enter>}zzPI  - <esc>
@@ -47,25 +47,34 @@ nnoremap -h4 mhyygg/INDEX<enter>}zzPI      - <esc>
 nnoremap -h5 mhyygg/INDEX<enter>}zzPI        - <esc>
 nnoremap -h6 mhyygg/INDEX<enter>}zzPI          - <esc>
 
-nnoremap -hr1 mhyygg/INDEX<enter>}PI- <esc>`hzz
-nnoremap -hr2 mhyygg/INDEX<enter>}PI  - <esc>`hzz
-nnoremap -hr3 mhyygg/INDEX<enter>}PI    - <esc>`hzz
-nnoremap -hr4 mhyygg/INDEX<enter>}PI      - <esc>`hzz
-nnoremap -hr5 mhyygg/INDEX<enter>}PI        - <esc>`hzz
-nnoremap -hr6 mhyygg/INDEX<enter>}PI          - <esc>`hzz
-
-nnoremap -hm1 0wmhy$gg/INDEX<enter>}zzPI- <esc>
-nnoremap -hm2 0wmhy$gg/INDEX<enter>}zzPI  - <esc>
-nnoremap -hm3 0wmhy$gg/INDEX<enter>}zzPI    - <esc>
-nnoremap -hm4 0wmhy$gg/INDEX<enter>}zzPI      - <esc>
-nnoremap -hm5 0wmhy$gg/INDEX<enter>}zzPI        - <esc>
-nnoremap -hm6 0wmhy$gg/INDEX<enter>}zzPI          - <esc>
+nnoremap -hr1 mhyygg/INDEX<enter>}PI- <esc>`h
+nnoremap -hr2 mhyygg/INDEX<enter>}PI  - <esc>`h
+nnoremap -hr3 mhyygg/INDEX<enter>}PI    - <esc>`h
+nnoremap -hr4 mhyygg/INDEX<enter>}PI      - <esc>`h
+nnoremap -hr5 mhyygg/INDEX<enter>}PI        - <esc>`h
+nnoremap -hr6 mhyygg/INDEX<enter>}PI          - <esc>`h
 
 nnoremap -l <Nop>
 nnoremap -lc <Nop>
 
 nnoremap -lce _cW,ea =j0
 	" define to enum
+
+nnoremap -t <Nop>
+
+nnoremap -t, f,lr<enter>
+
+nnoremap -m <Nop>
+nnoremap -mh <Nop>
+
+nnoremap -mh1 0wmhy$gg/INDEX<enter>}zzPI- <esc>
+nnoremap -mh2 0wmhy$gg/INDEX<enter>}zzPI  - <esc>
+nnoremap -mh3 0wmhy$gg/INDEX<enter>}zzPI    - <esc>
+nnoremap -mh4 0wmhy$gg/INDEX<enter>}zzPI      - <esc>
+nnoremap -mh5 0wmhy$gg/INDEX<enter>}zzPI        - <esc>
+nnoremap -mh6 0wmhy$gg/INDEX<enter>}zzPI          - <esc>
+
+nnoremap -mhx I<br><enter><enter><!-- INDEX --><enter><enter><br><enter><esc>
 
 set backupdir=~/vim_backups
 set directory=~/vim_backups
