@@ -11,7 +11,7 @@ call GK_clearRemaps()
 function! GK_tabSet(size)
 	let &tabstop = a:size
 	let &softtabstop = 0
-	let shiftwidth = a:size
+	let &shiftwidth = a:size
 	set noexpandtab
 endfunction
 
@@ -28,31 +28,60 @@ function! GK_noUnderline()
 	hi CursorLineNr cterm=NONE
 endfunction
 
+" leader-keys wont time out for remaps
+set notimeout nottimeout
+
 nnoremap - <Nop>
 
-nnoremap -h <Nop>
-nnoremap -hr <Nop>
+nnoremap -<tab> _v0"sy/^<c-r>s<backspace>[^ \t]<enter>``
 
-nnoremap -hk mhgg/INDEX<enter>zz
-nnoremap -hj mhgg/INDEX<enter>}zz
-nnoremap -hi I  
-nnoremap -hu 0xx
-nnoremap -hg 0wmhw"sy$/<c-r>s$<enter>zz
-nnoremap -hb `hzz
+nnoremap -i <Nop>
+nnoremap -ir <Nop>
+nnoremap -ik <Nop>
 
-nnoremap -h1 mhyygg/INDEX<enter>}zzPI- <esc>
-nnoremap -h2 mhyygg/INDEX<enter>}zzPI  - <esc>
-nnoremap -h3 mhyygg/INDEX<enter>}zzPI    - <esc>
-nnoremap -h4 mhyygg/INDEX<enter>}zzPI      - <esc>
-nnoremap -h5 mhyygg/INDEX<enter>}zzPI        - <esc>
-nnoremap -h6 mhyygg/INDEX<enter>}zzPI          - <esc>
+nnoremap -ii migg/INDEX<enter>zz
+" nnoremap -ij migg/INDEX<enter>}zz
+nnoremap -il I  
+nnoremap -ih 0xx
+nnoremap -ig _miw"sy$/^<c-r>s$<enter>ztkj
+nnoremap -ib `izz
 
-nnoremap -hr1 mhyygg/INDEX<enter>}PI- <esc>`h
-nnoremap -hr2 mhyygg/INDEX<enter>}PI  - <esc>`h
-nnoremap -hr3 mhyygg/INDEX<enter>}PI    - <esc>`h
-nnoremap -hr4 mhyygg/INDEX<enter>}PI      - <esc>`h
-nnoremap -hr5 mhyygg/INDEX<enter>}PI        - <esc>`h
-nnoremap -hr6 mhyygg/INDEX<enter>}PI          - <esc>`h
+" when in index list, jump to next index entry of the same level
+" nnoremap -ik _lv12h"sy?^<c-r>s<enter>
+" nnoremap -ij _lv12h"sy/^<c-r>s<enter>
+
+nnoremap -i1 miyygg/INDEX<enter>}zzPI- <esc>
+nnoremap -i2 miyygg/INDEX<enter>}zzPI  - <esc>
+nnoremap -i3 miyygg/INDEX<enter>}zzPI    - <esc>
+nnoremap -i4 miyygg/INDEX<enter>}zzPI      - <esc>
+nnoremap -i5 miyygg/INDEX<enter>}zzPI        - <esc>
+nnoremap -i6 miyygg/INDEX<enter>}zzPI          - <esc>
+
+nmap -ir1 -i1`i
+nmap -ir2 -i2`i
+nmap -ir3 -i3`i
+nmap -ir4 -i4`i
+nmap -ir5 -i5`i
+nmap -ir6 -i6`i
+
+nmap -iu11 -i1dd1kP
+nmap -iu21 -i2dd1kP
+nmap -iu31 -i3dd1kP
+nmap -iu41 -i4dd1kP
+nmap -iu51 -i5dd1kP
+nmap -iu61 -i6dd1kP
+
+nmap -iu12 -i1dd2kP
+nmap -iu22 -i2dd2kP
+nmap -iu32 -i3dd2kP
+nmap -iu42 -i4dd2kP
+nmap -iu52 -i5dd2kP
+nmap -iu62 -i6dd2kP
+
+" nmap -ik13 -i1dd3kP
+" nmap -ik14 -i1dd4kP
+" nmap -ik15 -i1dd5kP
+" nmap -ik16 -i1dd6kP
 
 nnoremap -l <Nop>
 nnoremap -lc <Nop>
