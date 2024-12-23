@@ -35,27 +35,18 @@ nnoremap - <Nop>
 
 nnoremap -<tab> _v0"sy/^<c-r>s<backspace>[^ \t]<enter>``
 
-nnoremap -i <Nop>
-nnoremap -ir <Nop>
-nnoremap -ik <Nop>
-
-nnoremap -ii migg/INDEX<enter>zz
-" nnoremap -ij migg/INDEX<enter>}zz
+nnoremap -ii migg/INDEX<enter>ztkj
 nnoremap -il I  
 nnoremap -ih 0xx
-nnoremap -ig _miw"sy$/^<c-r>s$<enter>ztkj
+nnoremap -ig _miw"sy$/<c-r>s$<enter>ztkj
 nnoremap -ib `izz
 
-" when in index list, jump to next index entry of the same level
-" nnoremap -ik _lv12h"sy?^<c-r>s<enter>
-" nnoremap -ij _lv12h"sy/^<c-r>s<enter>
-
-nnoremap -i1 miyygg/INDEX<enter>}zzPI- <esc>
-nnoremap -i2 miyygg/INDEX<enter>}zzPI  - <esc>
-nnoremap -i3 miyygg/INDEX<enter>}zzPI    - <esc>
-nnoremap -i4 miyygg/INDEX<enter>}zzPI      - <esc>
-nnoremap -i5 miyygg/INDEX<enter>}zzPI        - <esc>
-nnoremap -i6 miyygg/INDEX<enter>}zzPI          - <esc>
+nnoremap -i1 miyygg/INDEX<enter>}zzPI* <esc>
+nnoremap -i2 miyygg/INDEX<enter>}zzPI  * <esc>
+nnoremap -i3 miyygg/INDEX<enter>}zzPI    * <esc>
+nnoremap -i4 miyygg/INDEX<enter>}zzPI      * <esc>
+nnoremap -i5 miyygg/INDEX<enter>}zzPI        * <esc>
+nnoremap -i6 miyygg/INDEX<enter>}zzPI          * <esc>
 
 nmap -ir1 -i1`i
 nmap -ir2 -i2`i
@@ -78,32 +69,34 @@ nmap -iu42 -i4dd2kP
 nmap -iu52 -i5dd2kP
 nmap -iu62 -i6dd2kP
 
-" nmap -ik13 -i1dd3kP
-" nmap -ik14 -i1dd4kP
-" nmap -ik15 -i1dd5kP
-" nmap -ik16 -i1dd6kP
 
-nnoremap -l <Nop>
-nnoremap -lc <Nop>
-
-nnoremap -lce _cW,ea =j0
+nnoremap -ce _cW,ea =j0
 	" define to enum
+" nnoremap -cf _"syt;j/\V<c-r>s<enter>
+nnoremap -cf _"sy/(<enter>j/\C<c-r>s<enter>
+nnoremap -cgg gg/^[^#]<enter>
 
-nnoremap -t <Nop>
 
 nnoremap -t, f,lr<enter>
 
-nnoremap -m <Nop>
-nnoremap -mh <Nop>
 
-nnoremap -mh1 0wmhy$gg/INDEX<enter>}zzPI- <esc>
-nnoremap -mh2 0wmhy$gg/INDEX<enter>}zzPI  - <esc>
-nnoremap -mh3 0wmhy$gg/INDEX<enter>}zzPI    - <esc>
-nnoremap -mh4 0wmhy$gg/INDEX<enter>}zzPI      - <esc>
-nnoremap -mh5 0wmhy$gg/INDEX<enter>}zzPI        - <esc>
-nnoremap -mh6 0wmhy$gg/INDEX<enter>}zzPI          - <esc>
+nmap -mir1 -mi1`i
+nmap -mir2 -mi2`i
+nmap -mir3 -mi3`i
+nmap -mir4 -mi4`i
+nmap -mir5 -mi5`i
+nmap -mir6 -mi6`i
 
-nnoremap -mhx I<br><enter><enter><!-- INDEX --><enter><enter><br><enter><esc>
+nnoremap -mi1 mi_wy$gg/INDEX<enter>}zzPI* <esc>
+nnoremap -mi2 mi_wy$gg/INDEX<enter>}zzPI  * <esc>
+nnoremap -mi3 mi_wy$gg/INDEX<enter>}zzPI    * <esc>
+nnoremap -mi4 mi_wy$gg/INDEX<enter>}zzPI      * <esc>
+nnoremap -mi5 mi_wy$gg/INDEX<enter>}zzPI        * <esc>
+nnoremap -mi6 mi_wy$gg/INDEX<enter>}zzPI          * <esc>
+
+nnoremap -mix I<br><enter><enter><!-- INDEX --><enter><enter><br><enter><esc>
+nnoremap -mig 0"syi[/<c-r>s$\c<enter>ztkj
+
 
 set backupdir=~/vim_backups
 set directory=~/vim_backups
