@@ -97,6 +97,8 @@ nnoremap -mi6 mi_wy$gg/INDEX<enter>}zzPI          * <esc>
 nnoremap -mix I<br><enter><enter><!-- INDEX --><enter><enter><br><enter><esc>
 nnoremap -mig 0"syi[/<c-r>s$\c<enter>ztkj
 
+nnoremap -mil _W"wy$i[<esc>A]<esc>o<esc>0D"wpVu:silent! s/[^a-z ]//g<enter>:silent! s/ /-/g<enter>0"wy$ddkA(#<c-r>w)<esc>
+
 
 set backupdir=~/vim_backups
 set directory=~/vim_backups
