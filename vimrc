@@ -33,7 +33,10 @@ set notimeout nottimeout
 
 nnoremap - <Nop>
 
-nnoremap -<tab> _v0"sy/^<c-r>s<backspace>[^ \t]<enter>``
+nnoremap -<tab>n _v0"sy/^<c-r>s<backspace>[^ \t]<enter>
+nnoremap -<tab>N _v0"sy?^<c-r>s<backspace>[^ \t]<enter>
+nnoremap -<tab>0n /^[^ \t]<enter>
+nnoremap -<tab>0N ?^[^ \t]<enter>
 
 nnoremap -ii migg/INDEX<enter>ztkj
 nnoremap -il I  
