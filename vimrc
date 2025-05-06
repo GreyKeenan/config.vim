@@ -72,6 +72,8 @@ nmap -iu42 -i4dd2kP
 nmap -iu52 -i5dd2kP
 nmap -iu62 -i6dd2kP
 
+nmap -is -i1-iijV}k:sort<enter>
+
 
 nnoremap -ce _cW,ea =j0
 	" define to enum
