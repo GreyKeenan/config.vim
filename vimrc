@@ -72,8 +72,6 @@ nmap -iu42 -i4dd2kP
 nmap -iu52 -i5dd2kP
 nmap -iu62 -i6dd2kP
 
-nmap -is -i1-iijV}k:sort<enter>
-
 
 nnoremap -ce _cW,ea =j0
 	" define to enum
@@ -83,6 +81,7 @@ nnoremap -cgg gg/^[^#]<enter>
 
 
 nnoremap -t, f,lr<enter>
+nnoremap -ts { V}<backspace>:sort<enter>
 
 
 nmap -mir1 -mi1`i
@@ -100,7 +99,7 @@ nnoremap -mi5 mi_wy$gg/INDEX<enter>}zzPI        * <esc>
 nnoremap -mi6 mi_wy$gg/INDEX<enter>}zzPI          * <esc>
 
 nnoremap -mix I<br><enter><enter><!-- INDEX --><enter><enter><br><enter><esc>
-nnoremap -mig 0"syi[/<c-r>s$\c<enter>ztkj
+nnoremap -mig 0"syi[/<c-r>s$<enter>ztkj
 
 nnoremap -mil _W"wy$i[<esc>A]<esc>o<esc>0D"wpVu:silent! s/[^a-z ]//g<enter>:silent! s/ /-/g<enter>0"wy$ddkA(#<c-r>w)<esc>
 
@@ -146,3 +145,5 @@ let g:netrw_bufsettings='noma nomod nu rnu' " line numbers in explorer
 
 set belloff=all
 set mouse-=a " disable mouse
+
+" set colorcolumn=80
