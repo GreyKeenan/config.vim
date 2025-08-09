@@ -1,0 +1,3 @@
+
+* run `make` to overwrite `~/.vimrc` and create `~/.vim_backups`
+* add `export EDITOR=vim` in `~/.bashrc` or equivalent

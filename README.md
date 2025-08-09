@@ -1,11 +1,4 @@
-Grey Keenan's .vimrc
+My Vim Configuration
 ==================================================
 
-Its pretty minimal.
-
-> Dear Me,
-> 
-> 	Please stop forgetting to make the "~/vim_backups" folder.
-> 
-> Thank you, \
-> 	Also-Me
+It's fairly minimimal.
