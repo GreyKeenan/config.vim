@@ -87,8 +87,13 @@ set notimeout nottimeout " leader-keys wont time out for remaps
 " remaps
 " ==========
 
+" normal
+" ----------
+
 nnoremap - <Nop>
 
+nnoremap -<c-p> :r ~/.vim_clipboard.txt<enter>
+nmap -<c-y> V-<c-y>
 
 nnoremap -<tab>0n /^[^ \t]<enter>
 nnoremap -<tab>0N ?^[^ \t]<enter>
@@ -159,3 +164,10 @@ nnoremap -mix I<br><enter><enter><!-- INDEX --><enter><enter><br><enter><esc>
 
 nnoremap -t, f,lr<enter>
 nnoremap -ts { V}<backspace>:sort<enter>
+
+
+" visual
+" ----------
+
+vnoremap -<c-y> :w! ~/.vim_clipboard.txt<enter>
+
